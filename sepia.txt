@@ -1,0 +1,8 @@
+# SEPIA
+
+Connecto to MFS
+Create GUI
+Capture DATA
+LEVELS
+TOTAL
+RESET/RESTART
