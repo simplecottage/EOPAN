@@ -1,8 +1,5 @@
 # SEPIA
 
-Connecto to MFS
-Create GUI
-Capture DATA
-LEVELS
-TOTAL
-RESET/RESTART
+- Fix Counter when wrong operation
+- Dont show current answser
+- Restart button hotkey
