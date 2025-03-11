@@ -9,9 +9,9 @@ from scipy.io import wavfile
 class HearingTest:
     def __init__(self):
         self.frequencies = [250, 500, 1000, 2000, 3000, 4000, 6000, 8000]
-        self.volume_start = -90  # Starting volume in dB (extremely low, nearly inaudible)
-        self.volume_step = 1     # Volume increase step in dB (smaller steps for precision)
-        self.sample_rate = 44100 # Standard sample rate
+        self.volume_start = -75
+        self.volume_step = 1
+        self.sample_rate = 44100
         
         # PyAudio setup
         self.p = pyaudio.PyAudio()
