@@ -9,7 +9,6 @@ class MentalMathTrainer:
         self.root.geometry("550x450")
         self.root.resizable(False, False)
         
-        # Variables
         self.correct_count = 0
         self.wrong_count = 0
         self.current_problem = {"num1": 0, "num2": 0, "operation": "", "answer": 0}
@@ -42,7 +41,6 @@ class MentalMathTrainer:
         # Create widgets
         self.create_widgets()
         
-        # Generate first problem
         self.generate_problem()
 
     def create_widgets(self):
