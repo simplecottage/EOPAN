@@ -156,21 +156,14 @@ class HearingTest:
                 plt.plot(freqs, thresholds, marker=markers[ear], color=colors[ear], 
                          label=f'{ear.capitalize()} Ear', linestyle='-')
         
-        # Invert y-axis as audiograms show hearing loss as negative values
         plt.gca().invert_yaxis()
-        
-        # Logarithmic x-axis for frequencies
         plt.xscale('log')
         plt.xticks(self.frequencies, [str(f) for f in self.frequencies])
-        
-        # Labels and title
         plt.xlabel('Frequency (Hz)')
         plt.ylabel('Hearing Level (dB)')
         plt.title('DIY Audiogram')
         plt.grid(True)
         plt.legend()
-        
-        # Save the plot
         plt.savefig('audiogram_results.png')
         
         print("\nTest complete! Results saved as 'audiogram_results.png'")
