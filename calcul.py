@@ -373,15 +373,12 @@ class MentalMathTrainer:
         """Called whenever the answer entry changes."""
         if len(self.answer_var.get()) > 0:
             try:
-                # Only auto-check if the answer is an integer
                 user_answer = int(self.answer_var.get())
                 correct_answer = self.current_problem["answer"]
-                
-                # If correct, verify the answer
+
                 if user_answer == correct_answer:
                     self.check_answer()
             except ValueError:
-                # Not a valid integer yet, do nothing
                 pass
 
     def update_stats(self, vars_dict=None, stats_dict=None):
